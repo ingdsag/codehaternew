@@ -18,7 +18,6 @@ gulp.task('scripts', function() {
         .pipe(plumber())
         .pipe(concat('lib.js'))
         .pipe(uglify())
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/app'));
     return stream;
 
