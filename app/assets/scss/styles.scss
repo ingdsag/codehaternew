@@ -1,35 +1,143 @@
-@import "bootstrap";
 
-$primary-color: #4398cf;
-$primary-font-color: #e9e9e9;
-$primary-font-color-light: lighten($primary-font-color, 20);
-$primary-font-color-dark: darken($primary-font-color, 20);
+
+$primary-color: #424242;
 $primary-color-dark: darken($primary-color, 5);
 
-footer {
-  background: $primary-color;
-  color: $primary-font-color;
+$primary-font-color: #FFFFFF;
+$primary-font-color-light: lighten($primary-font-color, 20);
+$primary-font-color-dark: darken($primary-font-color, 20);
+
+
+$secondary-color: #ff9800;
+$secondary-color-dark: darken($secondary-color, 5);
+
+@import "bootstrap";
+
+html, body {
+  height:100%;
+}
+.container {
+  margin-bottom: 0;
+  width: 945px;
+}
+.content-wrapper {
+  min-height: 100%;
+}
+a {
+  color: $primary-font-color !important;
+}
+.codehater-logo {
+  font-size: 26px;
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+.logo-slogan {
+  display: inline-block;
   position: absolute;
+  margin-left: -90px;
+  margin-top: 30px;
+}
+footer {
+  background: $secondary-color;
+  color: $primary-font-color;
   bottom: 0;
   width: 100%;
   height: 60px;
   padding-top: 10px;
+  a {
+    text-decoration: underline;
+  }
 }
 body > .container {
-  padding: 120px 15px 0;
+  padding: 0 15px 0;
 }
 nav {
+  .container {
+    height: 70px;
+    #navbar {
+      height: 70px !important;
+      ul {
+        height: 70px;
+        li {
+          height: 70px;
+          a {
+            padding: 25px 15px;
+          }
+        }
+      }
+    }
+  }
   .navbar-nav {
-    margin-bottom: 20px;
   }
   background: $primary-color;
   color: $primary-font-color;
-  height: 130px;
+  height: 70px;
   a {
       color: $primary-font-color-light;
       &:hover {
         background-color: $primary-color-dark !important;
         color: $primary-font-color-dark !important;
       }
+      &:focus, &:active {
+        color: $primary-font-color;
+        background-color: $primary-color-dark !important;
+      }
   }
+}
+  iframe {
+  width:100%;
+  height:800px;
+  display: block;
+}
+.btn-primary {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: $secondary-color;
+  border: $secondary-color-dark;
+  &:hover {
+    background: $secondary-color-dark;
+  }
+  
+  &:focus {
+    background: $secondary-color-dark;
+  }
+  &:active {
+    background: $secondary-color-dark;
+  }
+}
+.banner {
+  width: 70%;
+  display: block;
+  margin-top: 90px;
+}
+.title {
+  position: absolute;
+  margin-top: 140px;
+  margin-left: 230px;
+  padding: 20px;
+  background: rgba(255,255,255, 0.8);
+  border-radius: 4px;
+  -webkit-box-shadow: 10px 8px 41px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 8px 41px -8px rgba(0,0,0,0.75);
+  box-shadow: 10px 8px 41px -8px rgba(0,0,0,0.75);
+}
+.page-header {
+  margin: 20px 0 20px !important;
+}
+.portfolio-item {
+  img {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    height:210px;
+  }
+  button {
+    margin-bottom: 10px;
+  }
+}
+.spacer-30 {
+  height: 30px;
+  width: 100%;
 }
