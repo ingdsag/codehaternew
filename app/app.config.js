@@ -15,7 +15,7 @@
             controller: 'IndexController'
         }).when('/portfolio/:item', {
             templateUrl: 'pages/portfolio.html',
-            activeTab: 'portfolio',
+            activeTab: 'index',
             controller: 'PortfolioController'
         }).when('/mycv/', {
             templateUrl: 'pages/mycv.html',

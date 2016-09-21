@@ -13,23 +13,3 @@ RewriteRule ^settings$ /settings.php
 RewriteRule ^search$ /search.php
 RewriteRule ^queries$ /queries.php
 RewriteRule ^forgot_password$ /forgot.php
-#RewriteRule ^ane_list$ /anelist.php
-#RewriteRule ^my_cv$ /curriculum.php
-#RewriteRule ^contact$ /contact_us.php
-#RewriteRule ^how_to_setup_ane_fd$ /setup_ane_fd.php
-#RewriteRule ^vibration_ane$ /subpages/vibration_ane.php
-#RewriteRule ^location_ane$ /subpages/location_ane.php
-
-
-RewriteRule ^show/(.+)$ /show.php?show=$1
-#RewriteRule ^country/(\w+)/(\w+)$ /country.php?country=$2&code=$1
-#RewriteRule ^countries$ /countries.php
-#RewriteRule ^submit_name$ /submit_name.php
-#RewriteRule ^about$ /about.php
-#RewriteRule ^search$ /search.php
-#RewriteRule ^query$ /query.php
-#RewriteRule ^(\w+)$ /single_name.php?name=$1
-#RewriteRule ^bluetooth_ane$ /subpages/bluetooth_ane.php
-#RewriteRule ^ane_list$ /anelist.php
-#RewriteRule ^my_cv$ /curriculum.php
-#RewriteRule ^contact$ /contact_us.php
