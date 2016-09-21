@@ -1,0 +1,35 @@
+@import "bootstrap";
+
+$primary-color: #4398cf;
+$primary-font-color: #e9e9e9;
+$primary-font-color-light: lighten($primary-font-color, 20);
+$primary-font-color-dark: darken($primary-font-color, 20);
+$primary-color-dark: darken($primary-color, 5);
+
+footer {
+  background: $primary-color;
+  color: $primary-font-color;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+}
+body > .container {
+  padding: 120px 15px 0;
+}
+nav {
+  .navbar-nav {
+    margin-bottom: 20px;
+  }
+  background: $primary-color;
+  color: $primary-font-color;
+  height: 130px;
+  a {
+      color: $primary-font-color-light;
+      &:hover {
+        background-color: $primary-color-dark !important;
+        color: $primary-font-color-dark !important;
+      }
+  }
+}

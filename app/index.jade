@@ -1,0 +1,9 @@
+doctype html
+html.ng-scope(ng-app="app")
+    include ./includes/head.jade
+    include ./includes/navigation.jade
+    body
+
+        include ./includes/header.jade
+        div.container(ng-view)
+        include ./includes/footer.jade
