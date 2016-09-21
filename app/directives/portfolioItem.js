@@ -6,7 +6,6 @@
     app.directive('portfolioItem', function () {
 
         var controller = ['$scope', function ($scope) {
-            console.log(111);
                 function init() {
                     $scope.items = angular.copy($scope.datasource);
                 }

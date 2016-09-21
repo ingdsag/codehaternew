@@ -5,10 +5,10 @@
         .module('app')
         .controller('IndexController', IndexController);
 
-    IndexController.$inject = ['$scope', '$rootScope', '$route'];
+    IndexController.$inject = ['$scope', '$rootScope', '$route', 'viewService'];
 
-    function IndexController($scope, $rootScope, $route) {
+    function IndexController($scope, $rootScope, $route, viewService) {
         var vm = this;
-        $rootScope.vm.activeTab = $route.current.$$route.activeTab;
+        viewService.initView();
     }
 })();

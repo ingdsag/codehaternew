@@ -5,10 +5,11 @@
         .module('app')
         .controller('PortfolioController', PortfolioController);
 
-    PortfolioController.$inject = ['$scope', '$rootScope', '$route'];
+    PortfolioController.$inject = ['$routeParams', '$rootScope', '$route', 'viewService'];
 
-    function PortfolioController($scope, $rootScope, $route) {
+    function PortfolioController($routeParams, $rootScope, $route, viewService) {
         var vm = this;
-        $rootScope.vm.activeTab = $route.current.$$route.activeTab;
+        viewService.initView();
+        vm.titulo = $routeParams.item;
     }
 })();

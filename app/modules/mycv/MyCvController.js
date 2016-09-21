@@ -5,10 +5,10 @@
         .module('app')
         .controller('MyCvController', MyCvController);
 
-    MyCvController.$inject = ['$scope', '$rootScope', '$route'];
+    MyCvController.$inject = ['$scope', '$rootScope', '$route', 'viewService'];
 
-    function MyCvController($scope, $rootScope, $route) {
+    function MyCvController($scope, $rootScope, $route, viewService) {
         var vm = this;
-        $rootScope.vm.activeTab = $route.current.$$route.activeTab;
+        viewService.initView();
     }
 })();
