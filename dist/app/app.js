@@ -33,6 +33,11 @@
         $rootScope.vm = {};
         var mobileMenuVisible = false;
         var mobileMenuAnimating = false;
+        
+        $rootScope.vm.menuPageChanged = function(newPage) {
+            $rootScope.vm.toggleMobileMenu();
+        };
+        
         $rootScope.vm.toggleMobileMenu = function() {
             if (!mobileMenuAnimating) {
                 mobileMenuAnimating = true;

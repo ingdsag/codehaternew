@@ -3,11 +3,11 @@ nav.mobile-nav
         li
             span.glyphicon.glyphicon-menu-hamburger.mobile(ng-click="vm.toggleMobileMenu()")
         li
-            a(href='#/', ng-class='{active: vm.activeTab == "index"}') Portfolio
+            a(ng-click='vm.menuPageChanged()', href='#/', ng-class='{active: vm.activeTab == "index"}') Portfolio
         li
-            a(href='#mycv', ng-class='{active: vm.activeTab == "mycv"}') My CV
+            a(ng-click='vm.menuPageChanged()', href='#mycv', ng-class='{active: vm.activeTab == "mycv"}') My CV
         li
-            a(target='_blank', href='https://github.com/ingdsag/codehaternew') Repository of this website
+            a(ng-click='vm.menuPageChanged()', target='_blank', href='https://github.com/ingdsag/codehaternew') Repository of this website
 
 nav.navbar.navbar-fixed-top
     .container
