@@ -13,6 +13,11 @@
                     angular.element( ".fade-element" ).addClass( "fade-in-frame" );
                     $window.scrollTo(0, 0);
                 }, 100);
+                
+                $rootScope.toggleMobileMenu = function() {
+                    console.log('menuToggle');
+                };
+                
             };
             return factory;
         }]);

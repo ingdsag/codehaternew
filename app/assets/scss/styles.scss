@@ -32,6 +32,21 @@ html, body {
 a {
   color: $primary-font-color !important;
 }
+.menu-button {
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 767px)  {
+  .menu-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 7px;
+    font-size: 30px;
+    padding: 10px 20px;
+  }
+}
 .codehater-logo {
   font-size: 26px;
   position: relative;
@@ -49,7 +64,7 @@ footer {
   color: $primary-font-color;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   padding-top: 10px;
   a {
     text-decoration: underline;
@@ -58,7 +73,42 @@ footer {
 body > .container {
   padding: 0 15px 0;
 }
+
+span.glyphicon.glyphicon-menu-hamburger.mobile {
+  right: 0;
+  padding: 19px;
+  font-size: 30px;
+}
+
 nav {
+  &.mobile-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1031;
+    padding: 0;
+    left: 100%;
+    top: 0;
+    
+    ul.nav {
+      width: 100%;
+      li {
+        width: 100%;
+        
+      }
+    }
+    a {
+      color: $primary-font-color-light;
+      &:hover {
+        background-color: $primary-color-dark !important;
+        color: $primary-font-color-dark !important;
+      }
+      &:focus, &:active, &.active {
+        color: $primary-font-color !important;
+        background-color: $primary-color-dark !important;
+      }
+    }
+  }
   background: $primary-color;
   color: $primary-font-color;
   .container {
@@ -117,15 +167,30 @@ iframe {
 .banner {
   width: 70%;
   display: block;
-  margin-top: 90px;
+  margin: 90px auto 0;
+  position: relative;
 }
-.title {
+h2.title {
   position: absolute;
-  margin-top: 140px;
-  margin-left: 230px;
-  padding: 20px;
-  background: rgba(255,255,255, 0.8);
-  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.8vw;
+  margin-top: 3%;
+}
+
+.image-header {
+  width: 100% !important;
+}
+.title-container {
+  position: absolute;
+  width: 96%;
+  height: 40%;
+  margin-top: 9%;
+  background: rgba(255, 255, 255, 0.7);
+  margin-left: 2%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   @extend .box-shadows;
 }
 .page-header {

@@ -1,8 +1,9 @@
 doctype html
-html.ng-scope(ng-app="app")
+html.ng-scope(ng-app="app", ng-controller="MainController")
     include ./includes/head.jade
-    include ./includes/navigation.jade
+    
     body
+        include ./includes/navigation.jade
         div.fade-element.fade-in-frame
 
         include ./includes/header.jade

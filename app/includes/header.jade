@@ -1,3 +1,14 @@
+nav.mobile-nav
+    ul.nav
+        li
+            span.glyphicon.glyphicon-menu-hamburger.mobile(ng-click="vm.toggleMobileMenu()")
+        li
+            a(href='#/', ng-class='{active: vm.activeTab == "index"}') Portfolio
+        li
+            a(href='#mycv', ng-class='{active: vm.activeTab == "mycv"}') My CV
+        li
+            a(target='_blank', href='https://github.com/ingdsag/codehaternew') Repository of this website
+
 nav.navbar.navbar-fixed-top
     .container
         span.codehater-logo Codehater
@@ -11,7 +22,11 @@ nav.navbar.navbar-fixed-top
                 li
                     a(target='_blank', href='https://github.com/ingdsag/codehaternew') Repository of this website
             // /input-group
+        div.menu-button(ng-click="vm.toggleMobileMenu()")
+            span.glyphicon.glyphicon-menu-hamburger
+                
 div.container
-    h2.title Codehater: Daniel's portfolio.
-    img.container.banner(src='images/banner.png')
-    
+    div.header-container.banner
+        div.title-container
+            h2.title Codehater: Daniel Arias's Portfolio
+        img.image-header(src='images/banner2.png')

@@ -9,7 +9,8 @@ gulp.task('scripts', function() {
     var sources = [
         './bower_components/jquery/dist/jquery.js',
         './bower_components/angular/angular.js',
-        './bower_components/angular-route/angular-route.js'
+        './bower_components/angular-route/angular-route.js',
+        './bower_components/angular-touch/angular-touch.js'
 
     ];
 

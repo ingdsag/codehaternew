@@ -11,8 +11,7 @@ gulp.task('sass', function() {
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer())
-        //.pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(sourcemaps.write())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('./dist/css'));
     return stream;
 });
