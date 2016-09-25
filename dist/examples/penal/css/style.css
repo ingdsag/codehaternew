@@ -1,0 +1,561 @@
+@font-face {
+    font-family: exoregular;
+    src: url(Exo2.0-Regular.otf) format("truetype");
+}
+@font-face {
+    font-family: exosemibold;
+    src: url(Exo2.0-SemiBold.otf) format("truetype");
+}
+.container
+{
+    background: #232323;
+    height: 3150px;
+}
+
+body
+{
+    padding:0;
+    margin:0;
+}
+.buildings1
+{
+    background: url("../images/buildings1.png") repeat-x;
+    display: block;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    top:205px;
+
+    height: auto;
+    position: absolute;
+}
+.buildings2
+{
+    background: url("../images/buildings2.png") repeat-x;
+    display: block;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    right:5px;
+    height: auto;
+    top:195px;
+    position: absolute;
+}
+.greenline,h1,h2,h3,h4,h5,h6
+{
+    margin:0;
+}
+*
+{
+    font-family: exosemibold;
+    color:#FFF;
+}
+
+.title h1
+{
+    font-size: 50px;
+
+}
+.title h2
+{
+    font-size: 35px;
+
+}
+.title h2,.title h1
+{
+    color: #62B9AA;
+    margin:0;
+    text-align: center;
+}
+.title
+{
+    top:24px;
+
+    font-size: 18px;
+    font-family: exoregular;
+
+    position: absolute;
+    text-align: justify;
+}
+.title-container
+{
+    width:682px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.greenline
+{
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #62B9AA;
+    margin: 10px 0;
+}
+.container2
+{
+    height: 510px;
+    background-color: #F3FAD3;
+    width: 100%;
+    position: absolute;
+    top: 530px;
+}
+.container2 .right-container
+{
+    float:right;
+}
+.container2 .pregunta
+{
+    background-color: #F16531;
+    padding: 14px 40px 14px 106px;
+    display: table;
+}
+.pregunta-container
+{
+    width: 376px;
+    float:left;
+}
+.pregunta-content
+{
+    color:#000;
+    width: 300px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+.number5,.number6,.number7,.number8,.number9,.number10,.number2,.number1
+{
+    position: absolute;
+    width: 52px;
+    height: 52px;
+}
+.number1
+{
+    background: url("../images/1.png");
+    margin-left: -90px;
+    top: 23px;
+}
+.number2
+{
+    background: url("../images/2.png");
+    margin-left: -90px;
+    top: 23px;
+}
+.number5
+{
+    background: url("../images/5.png");
+    left: 10%;
+    top: -5px;
+}
+.number6
+{
+    background: url("../images/6.png");
+    left: 10%;
+}
+.number7
+{
+    background: url("../images/7.png");
+}
+.number8
+{
+    background: url("../images/8.png");
+    left: 10%;
+}
+.number9
+{
+    background: url("../images/9.png");
+}
+.number10
+{
+    background: url("../images/10.png");
+}
+#pregunta-container1
+{
+    margin-top: 25px;
+}
+.impera
+{
+    background: #F16531;
+    width: 300px;
+    color: #FFF;
+    padding: 5px;
+    margin-top:20px;
+    text-align: center;
+}
+.note .content
+{
+    color:#000;
+    width: 210px;
+    float: left;
+}
+.note
+{
+    margin-top:16px;
+    margin-bottom: 10px;
+    display: table;
+}
+.lupa
+{
+    width: 48px;
+    background: url("../images/lupa.png");
+    height: 50px;
+    float: left;
+    margin-right: 40px;
+}
+.martillo
+{
+    width: 68px;
+    background: url("../images/mazo.png");
+    height: 43px;
+    float:left;
+    margin-right: 20px;
+}
+.picture-container
+{
+    margin-top: 25px;
+}
+img.jurado
+{
+    margin-right: 50px;
+    margin-top: 40px;
+    width:500px; /* you can use % */
+    height: auto;
+}
+div.pregunta.jurado
+{
+    float: right;
+    margin-top:25px;
+}
+.background-crema
+{
+    background: #F3FAD3;
+    height: 2114px;
+    width: 100%;
+    position: absolute;
+    top: 1040px;
+}
+.container3
+{
+    height: 262px;
+    background: url("../images/fondo_linea.png") no-repeat 0 -25px;
+    width: 100%;
+    position: absolute;
+    top: 1040px;
+    background-size: 100% auto;
+}
+.lineahoriz
+{
+    height: 4px;
+    width: 100%;
+    background: url("../images/lineahoriz.png");
+    margin-top: 10px;
+}
+.fondo3
+{
+    background: url("../images/fondo_3.png") no-repeat;
+    height: 185px;
+    margin: 0 auto;
+    width: 620px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    color:#F9F8D9;
+}
+.fondo3-content
+{
+    width: 580px;
+    padding: 20px;
+    color:#F9F8D9;
+}
+.fondo3 .fondo3-title
+{
+    color:#F9F8D9;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+.fondo3 li
+{
+    color:#F9F8D9;
+}
+ul
+{
+    margin-top: 10px;
+    list-style-image: url('../images/bullet.png');
+}
+.number3
+{
+    background: url("../images/3.png");
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 32px;
+    margin-left: -27px;
+}
+.paper
+{
+    background: url("../images/paper.png");
+    position: absolute;
+    bottom: 57px;
+    margin-left: 443px;
+    width: 124px;
+    height:56px;
+}
+.container4
+{
+    height: 532px;
+    position: absolute;
+    top: 1300px;
+    width: 100%;
+}
+.container4 .title
+{
+    background: #F16531;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.container4 .title-text
+{
+    display: table;
+    margin: 0 auto;
+}
+.container4 .number4 {
+     background: url("../images/4.png");
+     width: 52px;
+     height: 53px;
+     position: absolute;
+     margin-left: -180px;
+     top: -4px;
+ }
+.container4 .fase1
+{
+    background: url("../images/fiscal.png") no-repeat;
+    height:200px;
+    width: 26%;
+    margin-left: 17%;
+    float:left;
+
+}
+.container4 .fase2
+{
+    background: url("../images/approved.png") no-repeat;
+    height:178px;
+    width: 26%;
+    float:left;
+}
+.container4 .fase3
+{
+    background: url("../images/mazo2.png") no-repeat;
+    width: 26%;
+    height: 188px;
+    float:left;
+    margin-right: 3%;
+
+}
+.container4 .content
+{
+    width: 100%;
+    margin-top: 170px;
+}
+.container4 .title-fase
+{
+    margin-top: -60px;
+    display: table;
+    margin-left:10px;
+    padding:10px 20px;
+}
+.container4 .fase1 .title-fase
+{
+    background: #62B9AA;
+}
+.container4 .fase2 .title-fase
+{
+    background: #006666;
+}
+.container4 .fase3 .title-fase
+{
+    margin-left: 30px;
+    background: #003333;
+}
+.container5
+{
+    background:#CCFFFF;
+    width: 100%;
+    height: 255px;
+    top: 1710px;
+    position:absolute;
+}
+.container5 .title
+{
+    background:#006666;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    top: 0;
+}
+.container5 .title .text
+{
+    display: table;
+    margin-left:auto;
+    margin-right:auto;
+}
+.left-content,
+.right-content
+{
+    margin-top: 50px;
+    width: 400px;
+    color:#000;
+}
+.container5 .left-content li,
+.container5 .right-content li
+{
+    color:#000;
+}
+.left-content
+{
+    float:left;
+}
+.right-content
+{
+    float:left;
+}
+.containers
+{
+    display:table;
+    width: 801px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.container6 div.text {
+    color: #FFF;
+    width: 300px;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+.container6
+{
+    width: 100%;
+    height: 380px;
+    top: 1965px;
+    position:absolute;
+}
+.container6 .titlebar
+{
+    background: #F16531;
+    height: 80px;
+    width: 100%;
+}
+.number6
+{
+    margin-left: -46px;
+}
+.number7,.number8,.number9
+{
+    margin-left: -60px;
+}
+.placa
+{
+    background: url("../images/placa.png");
+    width: 120px;
+    height: 163px;
+    float: left;
+}
+.container6 .left-content .content
+{
+    float:left;
+    color: #000;
+    width: 250px;
+    margin-left: 30px;
+    text-align: justify;
+    margin-top: 30px;
+}
+.container6 .victima
+{
+    background: url("../images/victima.png");
+    width: 215px;
+    height: 213px;
+    margin-left: 100px;
+    margin-top: 32px;
+}
+.container7
+{
+    width: 100%;
+    height: 380px;
+    top: 2300px;
+    position:absolute;
+}
+.container7 .titlebar
+{
+    background: #F16531;
+    height: 80px;
+    width: 100%;
+}
+
+.number8
+{
+    margin-left: -46px;
+}
+.number9
+{
+    margin-left: -60px;
+}
+
+.container7 .preso
+{
+    background: url("../images/preso.png");
+    width: 230px;
+    height: 233px;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+.container7 div.text {
+    color: #FFF;
+    width: 300px;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+.container7 div.content {
+    color: #000 ;
+    margin-top: 40px;
+    margin-left: 60px;
+    text-align: justify;
+
+}
+.container8 .title
+{
+    background:#62B9AA;
+    top:40px;
+    padding: 5px;
+    width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    position:relative;
+    text-align: center;
+}
+.container8
+{
+    top: 2704px;
+    position: absolute;
+    width: 100%;
+    background: #CCFFFF;
+    height: 450px;
+}
+.container8 .mapa
+{
+    margin-top:128px;
+    width: 410px;
+    height: 169px;
+    background: url("../images/panama.png");
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+}
+.number10
+{
+    margin-left: 0px;
+    top:-10px;
+}

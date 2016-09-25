@@ -1,0 +1,6 @@
+RewriteEngine on
+Options -Multiviews
+#URLs amigables
+
+RewriteRule ^penal$ /examples/penal/index.html
+RewriteRule ^/$ /#/

@@ -29,7 +29,7 @@ html, body {
 .content-wrapper {
   min-height: 100%;
 }
-a {
+footer a, nav a {
   color: $primary-font-color !important;
 }
 .menu-button {
@@ -209,6 +209,12 @@ h2.title {
     margin-top: 10px;
   }
 }
+.portfolio-image {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
 .spacer-30 {
   height: 30px;
   width: 100%;

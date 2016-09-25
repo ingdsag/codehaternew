@@ -3,8 +3,11 @@
     'use strict';
     var app = angular.module('app', ['ngRoute', 'ngTouch']);
 
-    app.config(function ($routeProvider ) {
-
+    app.config(function ($routeProvider, $locationProvider) {
+        /*$locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });*/
         $routeProvider.when('/', {
             templateUrl: 'pages/index.html',
             activeTab: 'index',
@@ -20,6 +23,7 @@
         })
     });
 })();
+
 (function() {
     'use strict';
 
@@ -158,11 +162,11 @@
         .module('app')
         .controller('PortfolioController', PortfolioController);
 
-    PortfolioController.$inject = ['$routeParams', '$rootScope', '$route', 'viewService'];
+    PortfolioController.$inject = ['$routeParams', '$scope', '$rootScope', '$route', 'viewService'];
 
-    function PortfolioController($routeParams, $rootScope, $route, viewService) {
+    function PortfolioController($routeParams, $scope, $rootScope, $route, viewService) {
         var vm = this;
         viewService.initView();
-        vm.titulo = $routeParams.item;
+        $scope.item = $routeParams.item;
     }
 })();

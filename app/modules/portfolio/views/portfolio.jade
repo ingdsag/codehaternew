@@ -1,1 +1,10 @@
-h2 Coming Soon
+div(ng-if="item == 'edu'")
+    include sections/edu.jade
+div(ng-if="item == 'penal'")
+    include sections/penal.jade
+div(ng-if="item == 'sms'")
+    include sections/sms.jade
+div(ng-if="item == 'ww2'")
+    include sections/ww2.jade
+div(ng-if="item == 'poker'")
+    include sections/poker.jade
